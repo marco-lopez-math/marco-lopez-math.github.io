@@ -1,22 +1,46 @@
-<!DOCTYPE html>
-	<html>
-		<head>
-			<title>Marco López</title>
-			<!-- link to main stylesheet -->
-			<link rel="stylesheet" type="text/css" href="/css/main.css">
-		</head>
-		<body>
-			<nav>
-	    		<ul>
-	        		<li><a href="/">Home</a></li>
-		        	<li><a href="/about">About</a></li>
-	        		<li><a href="/cv">CV</a></li>
-	        		<li><a href="/publication">Publications</a></li>
-	    		</ul>
-			</nav>
-			<div class="container">
-			
-			<div class="bio-container">
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Marco López | Marco López</title>
+  <link rel="stylesheet" href="/css/main.css">
+
+  <!-- MathJax configuration must appear before the MathJax loader. -->
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [
+          ['\\(', '\\)'],
+          ['$', '$']
+        ],
+        displayMath: [
+          ['\\[', '\\]'],
+          ['$$', '$$']
+        ]
+      },
+      options: {
+        skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+    };
+  </script>
+  <!-- defer waits until the HTML document has been parsed before typesetting. -->
+  <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+
+<body>
+  <nav aria-label="Primary navigation">
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="/about.html">About</a></li>
+      <li><a href="/cv.html">CV</a></li>
+      <li><a href="/publication.html">Publications</a></li>
+    </ul>
+  </nav>
+
+  <main class="container">
+    <div class="bio-container">
 
     <div class="bio-photo">
         <img src="/images/Headshot.jpeg" alt="Photo of Marco López">
@@ -27,20 +51,19 @@
         <p>
             I am an NSF MPS-Ascend Postdoctoral Fellow in Mathematics at the
             <em>City University of New York</em>.
-            <a href="/about">Read more about my life...</a>
+            <a href="/about.html">Read more about me...</a>
         </p>
     </div>
 
 </div><!-- /.bio-container -->
 
-			
-			</div><!-- /.container -->
-			<footer>
-	    		<ul>
-	        		<li><a href="mailto:marco.lopez.math@gmail.com">email</a></li>
-	        		<li><a href="https://github.com/marco-lopez-math">github.com/marco-lopez-math</a></li>
-				</ul>
-			</footer>
-		</body>
-	</html>
+  </main>
 
+  <footer>
+    <ul>
+      <li><a href="mailto:marco.lopez.math@gmail.com">email</a></li>
+      <li><a href="https://github.com/marco-lopez-math">github.com/marco-lopez-math</a></li>
+    </ul>
+  </footer>
+</body>
+</html>

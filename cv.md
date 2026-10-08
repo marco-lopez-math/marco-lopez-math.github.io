@@ -14,6 +14,7 @@ title: CV
 <iframe
     src="{{ '/pdf/cv.pdf' | relative_url }}"
     width="100%"
-    height="1000px"
-    style="border: none;">
+    height="1000"
+    class="cv-frame"
+    title="Curriculum vitae">
 </iframe>

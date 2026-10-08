@@ -4,8 +4,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>{{ page.title }} | Marco López</title>
-  <link rel="stylesheet" href="{{ '/css/main.css' | relative_url }}">
+  <title>About | Marco López</title>
+  <link rel="stylesheet" href="/css/main.css">
 
   <!-- MathJax configuration must appear before the MathJax loader. -->
   <script>
@@ -32,15 +32,21 @@
 <body>
   <nav aria-label="Primary navigation">
     <ul>
-      <li><a href="{{ '/' | relative_url }}">Home</a></li>
-      <li><a href="{{ '/about.html' | relative_url }}">About</a></li>
-      <li><a href="{{ '/cv.html' | relative_url }}">CV</a></li>
-      <li><a href="{{ '/publication.html' | relative_url }}">Publications</a></li>
+      <li><a href="/">Home</a></li>
+      <li><a href="/about.html">About</a></li>
+      <li><a href="/cv.html">CV</a></li>
+      <li><a href="/publication.html">Publications</a></li>
     </ul>
   </nav>
 
   <main class="container">
-    {{ content }}
+    <h1>About</h1>
+
+<p>
+    I am an NSF MPS-Ascend Postdoctoral Fellow in Mathematics at the
+    <em>City University of New York</em>.
+</p>
+
   </main>
 
   <footer>

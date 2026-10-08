@@ -1,40 +1,50 @@
 body {
     margin: 60px auto;
     width: 70%;
+    color: #333;
+    font-family: Helvetica, Arial, sans-serif;
+    line-height: 1.5;
 }
+
 nav ul, footer ul {
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
-    padding: 0px;
+    padding: 0;
     list-style: none;
     font-weight: bold;
 }
+
 nav ul li, footer ul li {
     display: inline;
     margin-right: 20px;
 }
+
 a {
     text-decoration: none;
-    color: #999;
+    color: #777;
 }
-a:hover {
+
+a:hover,
+a:focus {
     text-decoration: underline;
 }
+
 h1 {
     font-size: 3em;
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+    font-family: Helvetica, Arial, sans-serif;
 }
+
 p {
     font-size: 1.5em;
     line-height: 1.4em;
-    color: #333;
 }
+
 footer {
     border-top: 1px solid #d5d5d5;
     font-size: .8em;
+    margin-top: 40px;
 }
 
-ul.posts { 
-    margin: 20px auto 40px; 
+ul.posts {
+    margin: 20px auto 40px;
     font-size: 1.5em;
 }
 
@@ -53,6 +63,7 @@ ul.posts li {
 }
 
 .bio-photo img {
+    display: block;
     width: 200px;
     height: 200px;
     object-fit: cover;
@@ -63,10 +74,86 @@ ul.posts li {
     flex: 1;
 }
 
-@media (max-width: 600px) {
+.publication-year {
+    margin-top: 35px;
+}
+
+.publication-year h2 {
+    font-size: 1.5em;
+    font-family: Helvetica, Arial, sans-serif;
+    color: #666;
+    border-bottom: 1px solid #d5d5d5;
+    padding-bottom: 5px;
+}
+
+.publication {
+    margin: 20px 0 30px;
+    font-size: 1.2em;
+    line-height: 1.5em;
+}
+
+.publication a {
+    margin-left: 8px;
+    font-size: 0.9em;
+}
+
+.cv-frame {
+    display: block;
+    width: 100%;
+    min-height: 75vh;
+    border: none;
+}
+
+/* Keep long display equations from widening the page. */
+mjx-container[display="true"] {
+    max-width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+@media (max-width: 700px) {
+    body {
+        margin: 30px auto;
+        width: auto;
+        padding: 0 20px;
+    }
+
+    nav ul {
+        line-height: 2;
+    }
+
+    nav ul li {
+        margin-right: 14px;
+    }
+
+    h1 {
+        font-size: 2.2em;
+    }
+
+    p {
+        font-size: 1.15em;
+    }
+
     .bio-container {
         flex-direction: column;
         text-align: center;
+        gap: 25px;
+    }
+
+    .bio-photo {
+        flex-basis: auto;
+    }
+
+    .bio-photo img {
+        width: 160px;
+        height: 160px;
+    }
+
+    .publication {
+        font-size: 1.05em;
+    }
+
+    .cv-frame {
+        min-height: 70vh;
     }
 }
-

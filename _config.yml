@@ -1,2 +1,9 @@
 name: Marco López, Mathematician
+title: Marco López, Mathematician
 markdown: kramdown
+kramdown:
+  input: GFM
+
+# This is a user site (marco-lopez-math.github.io), so no baseurl is needed.
+url: "https://marco-lopez-math.github.io"
+baseurl: ""
